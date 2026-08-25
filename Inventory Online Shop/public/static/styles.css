@@ -1,0 +1,29 @@
+#cart-drawer.open {
+  transform: translateX(0);
+}
+
+.product-card img {
+  height: 160px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.badge-pending { background: #fef3c7; color: #92400e; }
+.badge-paid { background: #d1fae5; color: #065f46; }
+.badge-completed { background: #dbeafe; color: #1e40af; }
+.badge-cancelled { background: #fee2e2; color: #991b1b; }
+.badge-abandoned { background: #e5e7eb; color: #374151; }
+
+@media print {
+  header, nav, .print\:hidden { display: none !important; }
+  body { background: white; }
+}
